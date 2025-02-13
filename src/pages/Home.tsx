@@ -20,7 +20,7 @@ const HomePage = () => {
             </p>
           </div>
           <div className="mt-10 sm:mt-0">
-            <img src="/public/man.png" alt="man" />
+            <img src="/man.png" alt="man" />
           </div>
         </div>
       </div>

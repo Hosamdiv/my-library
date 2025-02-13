@@ -41,9 +41,9 @@ const CategoriesPage = () => {
 export default CategoriesPage;
 
 const arrData: IData[] = [
-  { id: 1, image: "/public/icon.png", title: "Programming", link: "Shop Now" },
-  { id: 2, image: "/public/icon.png", title: "Programming", link: "Shop Now" },
-  { id: 3, image: "/public/icon.png", title: "Programming", link: "Shop Now" },
-  { id: 4, image: "/public/icon.png", title: "Programming", link: "Shop Now" },
-  { id: 5, image: "/public/icon.png", title: "Programming", link: "Shop Now" },
+  { id: 1, image: "/icon.png", title: "Programming", link: "Shop Now" },
+  { id: 2, image: "/icon.png", title: "Programming", link: "Shop Now" },
+  { id: 3, image: "/icon.png", title: "Programming", link: "Shop Now" },
+  { id: 4, image: "/icon.png", title: "Programming", link: "Shop Now" },
+  { id: 5, image: "/icon.png", title: "Programming", link: "Shop Now" },
 ];
