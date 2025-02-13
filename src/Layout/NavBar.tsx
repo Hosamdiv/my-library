@@ -79,7 +79,7 @@ const NavBar = () => {
 
           <div
             className={`fixed inset-0 bg-[#282830e8] z-20 flex justify-center items-center 
-        transition-all duration-500 ease-in-out 
+        transition-all duration-500 ease-in-out
         ${
           showModal
             ? "opacity-100 scale-100"
