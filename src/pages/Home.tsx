@@ -3,7 +3,7 @@ import CategoriesPage from "./Categories";
 const HomePage = () => {
   return (
     <>
-      <div className="pt-10 bg-gray-100 text-black">
+      <div className="pt-20 bg-gray-100  text-black">
         <div
           className="sm:flex items-center sm:justify-between text-center 
         sm:text-left 
@@ -19,12 +19,13 @@ const HomePage = () => {
               limited time only while supplies last
             </p>
           </div>
-          <div className="mt-10 sm:mt-0">
+          <div className="mt-10 sm:mt-0 ">
             <img src="/man.png" alt="man" />
           </div>
         </div>
       </div>
       <CategoriesPage />
+     
     </>
   );
 };

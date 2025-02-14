@@ -33,7 +33,10 @@ const CategoriesPage = () => {
             </div>
           ))}
         </div>
+
+        
       </div>
+
     </>
   );
 };

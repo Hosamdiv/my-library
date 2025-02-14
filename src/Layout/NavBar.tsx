@@ -12,7 +12,7 @@ import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
 
 const NavBar = () => {
-  const [showModal, setShowModal] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(true);
 
   return (
     <>
@@ -43,12 +43,15 @@ const NavBar = () => {
           </div>
         </div>
         {/* NavBar */}
-        <div className=" hidden md:block sticky top-0 bg-white text-black">
-          <nav className="flex items-center justify-between w-[90%] m-auto py-3 font-semibold">
+        <div className=" hidden md:block sticky top-0 bg-white
+         text-black">
+          <nav className="flex items-center justify-between w-[90%] 
+          m-auto py-2 font-semibold">
             <h1 className="text-3xl font-bold">Logo</h1>
             <ul className="flex space-x-8 text-[1.1rem] ">
-              {navbar.map((e) => (
+              {navbar.map((e, i) => (
                 <li
+                  key={i}
                   className="hover:text-blue-700 hover:-translate-y-1 transition delay-150
                 duration-300 ease-in-out "
                 >
@@ -57,19 +60,18 @@ const NavBar = () => {
               ))}
             </ul>
             <div className="flex">
-              <div></div>
               <Link to={""}>
-                <button className="cursor-pointer">
-                  <FaRegUserCircle className="text-3xl" />
+                <button className="cursor-pointer text-3xl">
+                  <FaRegUserCircle />
                 </button>
               </Link>
             </div>
           </nav>
         </div>
-        {/* Responsive NavBar */}
+        {/* Media NavBar */}
         <div className="py-2 border-black bg-white">
           <button
-            onClick={() => setShowModal(true)}
+            onClick={() => setShowModal(!showModal)}
             className="ml-6 text-3xl text-black border-2 rounded md:hidden
             hover:text-red-700 transition delay-150 duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-110"
@@ -92,7 +94,7 @@ const NavBar = () => {
                 <button
                   className="text-3xl hover:text-red-700 transition duration-300 ease-in-out
               hover:-translate-y-1 hover:scale-110"
-                  onClick={() => setShowModal(false)}
+                  onClick={() => setShowModal(!showModal)}
                 >
                   <FaRegWindowClose />
                 </button>
@@ -101,7 +103,7 @@ const NavBar = () => {
               {navbar.map((e, idx) => (
                 <li
                   key={idx}
-                  className={`pb-4 pt-2 transition-all duration-300 ease-in-out
+                  className={`pb-4 pt-2 text-white font-semibold transition-all duration-300 ease-in-out
               ${idx === navbar.length - 1 ? "" : "border-b border-gray-600"}
               hover:text-cyan-500 hover:-translate-y-1`}
                 >
