@@ -12,7 +12,7 @@ import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
 
 const NavBar = () => {
-  const [showModal, setShowModal] = useState<boolean>(true);
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
     <>
@@ -90,9 +90,9 @@ const NavBar = () => {
           >
             <ul className="w-[85%] mx-auto mt-[2rem] rounded-2xl bg-[#18181b] px-[2rem] py-[1rem] transition-all duration-500 ease-in-out">
               <li className="text-right mb-7 flex justify-between">
-                <h1 className="text-3xl font-bold">Logo</h1>
+                <h1 className="text-3xl text-white font-bold">Logo</h1>
                 <button
-                  className="text-3xl hover:text-red-700 transition duration-300 ease-in-out
+                  className="text-3xl text-white hover:text-red-700 transition duration-300 ease-in-out
               hover:-translate-y-1 hover:scale-110"
                   onClick={() => setShowModal(!showModal)}
                 >
