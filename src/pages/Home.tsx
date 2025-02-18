@@ -1,16 +1,18 @@
-import CategoriesPage from "./Categories";
+import CategoriesPage from "../components/Categories";
 
 const HomePage = () => {
   return (
     <>
-      <div className="pt-20 bg-gray-100  text-black">
+      <div className="pt-20 bg-[#caf0f8] text-black">
         <div
           className="sm:flex items-center sm:justify-between text-center 
         sm:text-left 
         w-[90%] m-auto"
         >
           <div className="space-y-3">
-            <h3 className="font-semibold">OUR BIGEST SALE</h3>
+            <h3 className="font-bold text-2xl text-blue-700">
+              OUR BIGEST SALE
+            </h3>
             <h1 className="text-2xl font-bold">
               Your journey begins here... Thousands of books are waiting for
               you! 🚀📚
@@ -25,7 +27,6 @@ const HomePage = () => {
         </div>
       </div>
       <CategoriesPage />
-     
     </>
   );
 };

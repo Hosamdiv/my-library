@@ -6,10 +6,10 @@ import {
   FaLinkedin,
   FaRegUserCircle,
   FaRegWindowClose,
-  FaTwitter,
 } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -18,50 +18,57 @@ const NavBar = () => {
     <>
       <div className="sticky top-0 z-20 ">
         {/* Contact me */}
-        <div className="border-b bg-white text-black ">
+        <div className="border-b bg-white text-black">
           <div className="flex items-center justify-between w-[90%] m-auto py-3">
             <h1 className="flex items-center font-semibold">
-              <span className="mr-1">
+              <span className="mr-1 text-2xl text-green-700">
                 <BsTelephone />
               </span>
               +01024717352
             </h1>
             <div className="flex space-x-2 text-2xl">
-              <span>
+              <span className="text-[#0866ff]">
                 <FaFacebook />
               </span>
               <span>
                 <FaInstagram />
               </span>
               <span>
-                <FaTwitter />
+                <RiTwitterXFill />
               </span>
-              <span>
+              <span className="text-[#0A66C2]">
                 <FaLinkedin />
               </span>
             </div>
           </div>
         </div>
         {/* NavBar */}
-        <div className=" hidden md:block sticky top-0 bg-white
-         text-black">
-          <nav className="flex items-center justify-between w-[90%] 
-          m-auto py-2 font-semibold">
+        <div
+          className=" hidden md:block sticky top-0 bg-white
+        text-black"
+        >
+          <nav
+            className="flex items-center justify-between w-[90%] 
+          m-auto py-2 font-semibold"
+          >
             <h1 className="text-3xl font-bold">Logo</h1>
             <ul className="flex space-x-8 text-[1.1rem] ">
               {navbar.map((e, i) => (
                 <li
                   key={i}
                   className="hover:text-blue-700 hover:-translate-y-1 transition delay-150
-                duration-300 ease-in-out "
+                duration-300 ease-in-out"
                 >
-                  <NavLink to="">{e.name}</NavLink>
+                  <NavLink to={e.link}>{e.name}</NavLink>
                 </li>
               ))}
             </ul>
             <div className="flex">
-              <Link to={""}>
-                <button className="cursor-pointer text-3xl">
+              <Link to={"/login"}>
+                <button
+                  className="cursor-pointer text-3xl
+                 hover:text-green-700 duration-300 ease-in-out"
+                >
                   <FaRegUserCircle />
                 </button>
               </Link>
@@ -120,9 +127,9 @@ const NavBar = () => {
 
 export default NavBar;
 const navbar = [
-  { name: "Home", link: "" },
-  { name: "Magazines", link: "" },
-  { name: "Books", link: "" },
-  { name: "Text Books", link: "" },
-  { name: "Product", link: "" },
+  { name: "Home", link: "/" },
+  { name: "Magazines", link: "/magazines" },
+  { name: "Books", link: "/books" },
+  { name: "Text Books", link: "/textbooks" },
+  { name: "Product", link: "/product" },
 ];
