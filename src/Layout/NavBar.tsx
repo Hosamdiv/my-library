@@ -30,7 +30,7 @@ const NavBar = () => {
               <span className="text-[#0866ff]">
                 <FaFacebook />
               </span>
-              <span>
+              <span className="text-red-600">
                 <FaInstagram />
               </span>
               <span>
@@ -67,7 +67,7 @@ const NavBar = () => {
               <Link to={"/login"}>
                 <button
                   className="cursor-pointer text-3xl
-                 hover:text-green-700 duration-300 ease-in-out"
+                hover:text-green-700 duration-300 ease-in-out"
                 >
                   <FaRegUserCircle />
                 </button>
@@ -99,7 +99,8 @@ const NavBar = () => {
               <li className="text-right mb-7 flex justify-between">
                 <h1 className="text-3xl text-white font-bold">Logo</h1>
                 <button
-                  className="text-3xl text-white hover:text-red-700 transition duration-300 ease-in-out
+                  className="text-3xl text-white hover:text-red-700
+                   transition duration-300 ease-in-out
               hover:-translate-y-1 hover:scale-110"
                   onClick={() => setShowModal(!showModal)}
                 >
@@ -112,7 +113,7 @@ const NavBar = () => {
                   key={idx}
                   className={`pb-4 pt-2 text-white font-semibold transition-all duration-300 ease-in-out
               ${idx === navbar.length - 1 ? "" : "border-b border-gray-600"}
-              hover:text-cyan-500 hover:-translate-y-1`}
+              hover:text-blue-700 hover:-translate-y-1`}
                 >
                   <Link to="">{e.name}</Link>
                 </li>
