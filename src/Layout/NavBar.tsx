@@ -52,12 +52,12 @@ const NavBar = () => {
           m-auto py-2 font-semibold"
           >
             <h1 className="text-3xl font-bold">Logo</h1>
-            <ul className="flex space-x-8 text-[1.1rem] ">
+            <ul className="flex space-x-3 text-[1.1rem] ">
               {navbar.map((e, i) => (
                 <li
                   key={i}
                   className="hover:text-blue-700 hover:-translate-y-1 transition delay-150
-                duration-300 ease-in-out"
+                p-2 hover:bg-gray-300 rounded-2xl duration-300 ease-in-out"
                 >
                   <NavLink to={e.link}>{e.name}</NavLink>
                 </li>
