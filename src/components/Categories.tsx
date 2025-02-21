@@ -26,7 +26,7 @@ const CategoriesPage = () => {
               <img src={e.image} className="m-auto" width={40} alt={e.image} />
               <h3 className="text-[1.2rem] font-bold mb-4">{e.title}</h3>
               <div className="flex items-center justify-center space-x-1">
-                <Link className="text-orange-400" to="">
+                <Link to="" className="text-orange-400">
                   {e.link}
                 </Link>
                 <span className="text-orange-400">
@@ -48,5 +48,6 @@ const arrData: IData[] = [
   { id: 2, image: "/icon.png", title: "Programming", link: "Shop Now" },
   { id: 3, image: "/icon.png", title: "Programming", link: "Shop Now" },
   { id: 4, image: "/icon.png", title: "Programming", link: "Shop Now" },
+  { id: 5, image: "/icon.png", title: "Programming", link: "Shop Now" },
   { id: 5, image: "/icon.png", title: "Programming", link: "Shop Now" },
 ];

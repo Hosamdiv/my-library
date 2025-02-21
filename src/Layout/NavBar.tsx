@@ -30,7 +30,7 @@ const NavBar = () => {
               <span className="text-[#0866ff]">
                 <FaFacebook />
               </span>
-              <span className="text-red-600">
+              <span className="text-red-700">
                 <FaInstagram />
               </span>
               <span>
@@ -44,7 +44,7 @@ const NavBar = () => {
         </div>
         {/* NavBar */}
         <div
-          className=" hidden md:block sticky top-0 bg-white
+          className="hidden md:block sticky top-0 bg-white
         text-black"
         >
           <nav
@@ -67,7 +67,7 @@ const NavBar = () => {
               <Link to={"/login"}>
                 <button
                   className="cursor-pointer text-3xl
-                hover:text-green-700 duration-300 ease-in-out"
+                hover:text-green-700 hover:-translate-y-1 duration-300 ease-in-out"
                 >
                   <FaRegUserCircle />
                 </button>
@@ -77,14 +77,28 @@ const NavBar = () => {
         </div>
         {/* Media NavBar */}
         <div className="py-2 border-black bg-white">
-          <button
-            onClick={() => setShowModal(!showModal)}
-            className="ml-6 text-3xl text-black border-2 rounded md:hidden
+          <div
+            className="flex items-center justify-between w-[90%] m-auto
+          md:hidden
+          "
+          >
+            <button
+              onClick={() => setShowModal(!showModal)}
+              className=" text-3xl text-black border-2 rounded 
             hover:text-red-700 transition delay-150 duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-110"
-          >
-            <IoMenu />
-          </button>
+            >
+              <IoMenu />
+            </button>
+            <Link to={"/login"}>
+              <button
+                className="cursor-pointer text-3xl
+                hover:text-green-700 hover:-translate-y-1 duration-300 ease-in-out"
+              >
+                <FaRegUserCircle />
+              </button>
+            </Link>
+          </div>
 
           <div
             className={`fixed inset-0 bg-[#282830e8] z-20 flex justify-center items-center 

@@ -5,7 +5,7 @@ import {
 } from "react-router";
 import LayoutPage from "../pages/Layout";
 import HomePage from "../pages/Home";
-import LoginPage from "../pages/LoginPage";
+import LoginPage from "../pages/Login";
 import ErrorHandler from "../components/errors/ErrorHandler";
 import PageNotFound from "../pages/PageNotFound";
 import MagazinesPage from "./MagazinesPage";
