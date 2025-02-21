@@ -129,7 +129,7 @@ const NavBar = () => {
               ${idx === navbar.length - 1 ? "" : "border-b border-gray-600"}
               hover:text-blue-700 hover:-translate-y-1`}
                 >
-                  <Link to="">{e.name}</Link>
+                  <Link to={e.link}>{e.name}</Link>
                 </li>
               ))}
             </ul>

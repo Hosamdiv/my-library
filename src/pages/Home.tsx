@@ -10,7 +10,7 @@ const HomePage = () => {
         w-[90%] m-auto"
         >
           <div className="space-y-3">
-            <h3 className="font-bold text-4xl text-blue-700">
+            <h3 className="font-bold text-5xl text-blue-700">
               OUR BIGEST SALE
             </h3>
             <h1 className="text-3xl font-bold">

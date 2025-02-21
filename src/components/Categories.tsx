@@ -10,7 +10,7 @@ const CategoriesPage = () => {
   return (
     <>
       <div className="bg-[#fff] text-center text-black pt-20">
-        <h1 className="w-[80%] m-auto text-3xl font-bold mb-5">Categories</h1>
+        <h1 className="w-[80%] m-auto text-4xl text-blue-700 font-bold mb-5">Categories</h1>
         <div
           className="grid gap-4 grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 w-[80%] 
   m-auto pb-10 justify-items-center"
