@@ -7,7 +7,7 @@ import LayoutPage from "../pages/Layout";
 import HomePage from "../pages/Home";
 import LoginPage from "../pages/Login";
 import ErrorHandler from "../components/errors/ErrorHandler";
-import PageNotFound from "../pages/PageNotFound";
+// import PageNotFound from "../pages/PageNotFound";
 import MagazinesPage from "./MagazinesPage";
 
 const router = createBrowserRouter(
@@ -18,7 +18,7 @@ const router = createBrowserRouter(
         <Route path="magazines" element={<MagazinesPage />} />
       </Route>
       <Route path="/login" element={<LoginPage />} />
-      <Route path="*" element={<PageNotFound />} />
+      {/* <Route path="*" element={<PageNotFound />} /> */}
     </>
   )
 );
