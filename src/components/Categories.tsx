@@ -12,8 +12,9 @@ const CategoriesPage = () => {
       <div className="bg-[#fff] text-center text-black pt-20">
         <h1 className="w-[80%] m-auto text-4xl text-blue-700 font-bold mb-5">Categories</h1>
         <div
-          className="grid gap-4 grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 w-[80%] 
-  m-auto pb-10 justify-items-center"
+          className="grid gap-4 grid-cols-1 lg:grid-cols-4
+          xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 w-[80%] 
+          m-auto mb-10 justify-items-center"
         >
           {arrData.map((e) => (
             <div
@@ -48,6 +49,5 @@ const arrData: IData[] = [
   { id: 2, image: "/icon.png", title: "Programming", link: "Shop Now" },
   { id: 3, image: "/icon.png", title: "Programming", link: "Shop Now" },
   { id: 4, image: "/icon.png", title: "Programming", link: "Shop Now" },
-  { id: 5, image: "/icon.png", title: "Programming", link: "Shop Now" },
   { id: 5, image: "/icon.png", title: "Programming", link: "Shop Now" },
 ];
